@@ -42,10 +42,10 @@ pipe = pipe.to(device)
 guidance_scale = 4.5
 num_images_per_prompt = 1
 
-unlearned_output_dir = "unlearned_object"
+unlearned_output_dir = "unlearned_pixel"
 os.makedirs(unlearned_output_dir, exist_ok=True)
 
-generated_output_dir = "generated_object"
+generated_output_dir = "generated_pixel"
 os.makedirs(generated_output_dir, exist_ok=True)
 
 def sanitize_filename(prompt):
